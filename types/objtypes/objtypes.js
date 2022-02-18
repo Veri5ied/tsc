@@ -1,7 +1,8 @@
-var personObj = {
+"use strict";
+const personObj = {
     name: "Alvin",
     age: 30,
     sex: "male",
-    isHome: false
+    isHome: false,
 };
 console.log(personObj.name);
