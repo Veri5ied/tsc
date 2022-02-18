@@ -2,10 +2,12 @@ function checkNumStrBool(
   n1: number,
   n2: number,
   showResult: boolean,
-  output: string
+  phrase: string
 ) {
+
+  const result = n1 + n2;
   if (showResult) {
-    console.log(n1 + n2);
+    console.log(phrase + result);
   } else {
     return n1 + n2;
   }
@@ -14,6 +16,6 @@ function checkNumStrBool(
 const n1 = 10;
 const n2 = 20;
 const showResult = true;
-const output = "The result is: ";
+const phrase = "The result is: ";
 
-checkNumStrBool(n1, n2, showResult, output);
+checkNumStrBool(n1, n2, showResult, phrase);

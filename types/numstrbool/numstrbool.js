@@ -1,6 +1,7 @@
-function checkNumStrBool(n1, n2, showResult, output) {
+function checkNumStrBool(n1, n2, showResult, phrase) {
+    var result = n1 + n2;
     if (showResult) {
-        console.log(n1 + n2);
+        console.log(phrase + result);
     }
     else {
         return n1 + n2;
@@ -9,5 +10,5 @@ function checkNumStrBool(n1, n2, showResult, output) {
 var n1 = 10;
 var n2 = 20;
 var showResult = true;
-var output = "The result is: ";
-checkNumStrBool(n1, n2, showResult, output);
+var phrase = "The result is: ";
+checkNumStrBool(n1, n2, showResult, phrase);
