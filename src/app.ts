@@ -19,6 +19,16 @@ interface Students {
   grade: number;
 }
 
+enum SchoolProgress {
+  present,
+  absent,
+  working,
+  sleeping,
+  playing,
+}
+
+console.log(SchoolProgress.present);
+
 submitBtn.addEventListener("click", () => {
   console.log(email.value);
   console.log(password.value);
