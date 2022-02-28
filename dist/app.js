@@ -50,4 +50,10 @@ else {
 let department;
 department = "Computer Science";
 const levels = ["100lvl", "200lvl", "300lvl", "400lvl"];
-console.log(`${StudentObj.name} whose grade is ${StudentObj.name} is in ${department}, ${levels[2]}`);
+console.log(`${StudentObj.name} whose grade is ${StudentObj.grade} is in ${department}, ${levels[2]}`);
+function addNumbers(num1, num2) {
+    return num1 + num2;
+}
+console.log(addNumbers(21, 10));
+const decrementNumbers = (num1, num2) => num1 - num2;
+console.log(decrementNumbers(100, 90));

@@ -8,6 +8,8 @@ const darkMode = document.getElementById("darkMode");
 type ID = string;
 type ISLOADING = boolean;
 type DEPARTMENT = string;
+type COUNTONE = number;
+type COUNTTWO = number;
 interface Students {
   name: string;
   reg: string;
@@ -78,5 +80,14 @@ department = "Computer Science";
 
 const levels: Array<string> = ["100lvl", "200lvl", "300lvl", "400lvl"];
 console.log(
-  `${StudentObj.name} whose grade is ${StudentObj.name} is in ${department}, ${levels[2]}`
+  `${StudentObj.name} whose grade is ${StudentObj.grade} is in ${department}, ${levels[2]}`
 );
+
+function addNumbers(num1: COUNTONE, num2: COUNTTWO) {
+  return num1 + num2;
+}
+
+console.log(addNumbers(21, 10));
+
+const decrementNumbers = (num1: COUNTONE, num2: COUNTTWO) => num1 - num2;
+console.log(decrementNumbers(100, 90));
