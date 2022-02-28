@@ -7,6 +7,7 @@ const darkMode = document.getElementById("darkMode");
 
 type ID = string;
 type ISLOADING = boolean;
+type DEPARTMENT = string;
 interface Students {
   name: string;
   reg: string;
@@ -71,3 +72,11 @@ if (StudentObj.isPresent) {
     `${StudentObj.name} is missing a point 5 from grade: ${StudentObj.grade}`
   );
 }
+
+let department: DEPARTMENT;
+department = "Computer Science";
+
+const levels: Array<string> = ["100lvl", "200lvl", "300lvl", "400lvl"];
+console.log(
+  `${StudentObj.name} whose grade is ${StudentObj.name} is in ${department}, ${levels[2]}`
+);
