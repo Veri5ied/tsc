@@ -17,3 +17,13 @@ lightBtn.addEventListener("click", () => {
     darkMode === null || darkMode === void 0 ? void 0 : darkMode.classList.remove("dark-theme");
     darkMode === null || darkMode === void 0 ? void 0 : darkMode.classList.add("switcher");
 });
+const objectProperties = {
+    name: "Alvin",
+    age: 32,
+    isWorking: true,
+    id: Math.random().toString(16),
+};
+const download = objectProperties.isWorking;
+const ident = objectProperties.id;
+console.log(download);
+console.log(ident);
