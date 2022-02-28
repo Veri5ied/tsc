@@ -57,3 +57,18 @@ function addNumbers(num1, num2) {
 console.log(addNumbers(21, 10));
 const decrementNumbers = (num1, num2) => num1 - num2;
 console.log(decrementNumbers(100, 90));
+function getObjects(obj) {
+    return Object.assign(Object.assign({}, obj), { id: Math.random().toString(16) });
+}
+const objects = {
+    item: "Book",
+};
+console.log(getObjects(objects));
+const addTwoStrings = (strs) => {
+    return Object.assign(Object.assign({}, strs), { id: Math.random().toString(16) });
+};
+const stri = {
+    one: "Hello",
+    two: "World",
+};
+console.log(addTwoStrings(stri));
