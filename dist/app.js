@@ -27,3 +27,17 @@ const download = objectProperties.isWorking;
 const ident = objectProperties.id;
 console.log(download);
 console.log(ident);
+const StudentObj = {
+    name: "Patrick",
+    reg: Math.random().toString(16),
+    hasPaidFees: true,
+    isPresent: true,
+    gender: "Male",
+    grade: 90,
+};
+console.log(StudentObj.name);
+console.log(StudentObj.reg);
+console.log(StudentObj.hasPaidFees);
+console.log(StudentObj.isPresent);
+console.log(StudentObj.gender);
+console.log(StudentObj.grade);
