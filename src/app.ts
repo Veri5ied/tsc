@@ -6,7 +6,7 @@ const darkBtn = document.getElementById("dark")!;
 const darkMode = document.getElementById("darkMode");
 
 type ID = string;
-type ISLLOADING = boolean;
+type ISLOADING = boolean;
 interface Students {
   name: string;
   reg: string;
@@ -63,3 +63,11 @@ console.log(StudentObj.hasPaidFees);
 console.log(StudentObj.isPresent);
 console.log(StudentObj.gender);
 console.log(StudentObj.grade);
+
+if (StudentObj.isPresent) {
+  console.log("10 points given for being present");
+} else {
+  console.log(
+    `${StudentObj.name} is missing a point 5 from grade: ${StudentObj.grade}`
+  );
+}
